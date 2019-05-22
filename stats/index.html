@@ -58,10 +58,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link" href="/got/">/home</a>
-                <a class="nav-item nav-link" href="/got/archive">/archive</a>
-                <a class="nav-item nav-link" href="/got/tags">/tags</a>
-                <a class="nav-item nav-link" href="/got/about">/about</a>
+                <a class="nav-item nav-link" href="/got/">Home</a>
+                <a class="nav-item nav-link" href="/got/archive">Archive</a>
+                <a class="nav-item nav-link" href="/got/tags">Tags</a>
+                <a class="nav-item nav-link" href="/got/about">About</a>
             </div>
         </div>
     </div>
@@ -103,6 +103,20 @@
     var accentColor = "#3CA2A2";
 
     var datePostsWords = [
+        
+            {
+                "t":"2019-5",
+                "year":"2019",
+                "x":1,
+                "y":1550
+            },
+        
+            {
+                "t":"2019-5",
+                "year":"2019",
+                "x":1,
+                "y":1170
+            },
         
             {
                 "t":"2019-5",
@@ -238,7 +252,7 @@
     var pieData = [
         
             
-             1, 
+             3, 
         
             
              , 
@@ -270,10 +284,14 @@
 <script>
     var totalWords = [
         
+            1550,
+        
+            1170,
+        
             925,
         
     ].reduce((a, b) => a + b, 0);
-    var totalPosts = 1;
+    var totalPosts = 3;
 
     function concatBoldTextToELement(id, text) {
         var abvgd = document.createElement('b');
@@ -294,6 +312,10 @@
   <h2>Recent Posts</h2>
   <ul>
     
+    <li><a href="/got/2019/05/coin-or-not/">Coin Or Not</a></li>
+    
+    <li><a href="/got/2019/05/money-leaching-mechanic/">Money Leaching Mechanic</a></li>
+    
     <li><a href="/got/2019/05/welcom-to-got/">Welcome to GOT-WIC</a></li>
     
   </ul>
@@ -305,7 +327,7 @@
     
     
     <li>
-      <a href="/got/tag/basics" data-toggle="tooltip" data-placement="right" title="1">
+      <a href="/got/tag/basics" data-toggle="tooltip" data-placement="right" title="3">
         <span>basics</span></a></li>
     
   </ul>
